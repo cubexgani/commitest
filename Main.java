@@ -4,6 +4,8 @@ public class Main {
         int n = 67;
         System.out.println("The value of n is " + n);
         System.out.println(palindrome(n));
+        n = 1331;
+        System.out.println(palindrome(n));
     }
     static boolean palindrome(int s) {
         int cp = s, rev = 0;
