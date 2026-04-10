@@ -19,6 +19,6 @@ public class Main {
         return false;
     }
     static boolean evenOdd(int n) {
-        return n % 2 ? true : false;
+        return n % 2 == 0 ? true : false;
     }
 }
