@@ -18,7 +18,7 @@ public class Main {
         if (rev == cp) return true;
         return false;
     }
-    static bool evenOdd(int n) {
+    static boolean evenOdd(int n) {
         return n % 2 ? true : false;
     }
 }
