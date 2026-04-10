@@ -3,9 +3,18 @@ import java.util.Scanner;
 public class Prime {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("N = ");
-        int n = sc.nextInt();
-        System.out.println(isPrime(n) ? "Prime" : "Composite");
+        boolean flag = true;
+        while (flag) {
+            System.out.print("I won't leave you until you enter a prime number = ");
+            int n = sc.nextInt();
+            boolean p = isPrime(n);
+            if (p) {
+                System.out.println("Prime");
+                flag = false;
+            }
+            else System.out.println("Composite");
+        }
+        System.out.println("Goodbye");
     }
     static boolean isPrime(int n) {
         int c = 0;
