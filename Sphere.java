@@ -15,6 +15,7 @@ public class Sphere {
         int ysq = (y - cy) * (y - cy);
         int zsq = (z - cz) * (z - cz);
         int s = xsq + ysq + zsq - radius * radius;
+	if (s == 0) return 0;
         return s / Math.abs(s);
     }
     public String toString() {
