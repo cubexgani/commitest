@@ -12,8 +12,12 @@ public class Cube {
     int totalArea() {
         return 6 * side * side;
     }
+    public String toString() {
+        return String.format("Cube [ side = %d ]", side);
+    }
     public static void main(String[] args) {
         Cube cb = new Cube(5);
+        System.out.println(cb);
         System.out.println("Volume = " + cb.volume());
         System.out.println("Lateral area = " + cb.lateralArea());
         System.out.println("Total area = " + cb.totalArea());
