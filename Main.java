@@ -6,6 +6,7 @@ public class Main {
         System.out.println(palindrome(n));
         n = 1331;
         System.out.println(palindrome(n));
+        System.out.println(evenOdd(n));
     }
     static boolean palindrome(int s) {
         int cp = s, rev = 0;
@@ -16,5 +17,8 @@ public class Main {
         }
         if (rev == cp) return true;
         return false;
+    }
+    static bool evenOdd(int n) {
+        return n % 2 ? true : false;
     }
 }
