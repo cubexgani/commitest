@@ -7,6 +7,7 @@ public class Main {
         n = 1331;
         System.out.println(palindrome(n));
         System.out.println(evenOdd(n));
+        System.out.println(gcd(5, 4));
     }
     static boolean palindrome(int s) {
         int cp = s, rev = 0;
@@ -20,5 +21,8 @@ public class Main {
     }
     static boolean evenOdd(int n) {
         return n % 2 == 0 ? true : false;
+    }
+    static int gcd(int m, int n) {
+        return n == 0 ? m : gcd(n, m % n);
     }
 }
